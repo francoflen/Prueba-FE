@@ -1,0 +1,89 @@
+:root{
+    --primario:rebeccapurple;
+    --secundario:rgba(114, 89, 255, 0.2);
+}
+body{
+    margin: 30px 20px;
+    background-color: var(--secundario);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primario);
+    text-align: center;
+}
+
+/*---- NAVEGACION ----*/
+nav{
+    background-color: var(--primario);
+    color: aliceblue;
+    display: flex;
+}
+nav a:hover{
+    background-color: aliceblue;
+    color: var(--primario);
+    border-radius: 5px;
+}
+nav a{
+    display: block;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+}
+
+/*---- Contenido ----*/
+h1{
+    color: rgb(70, 12, 70);
+    margin-bottom: 5px;
+}
+h1:hover{
+    font-size: 34px;
+    color: var(--primario);
+}
+h2{
+    color: rgb(241, 161, 33);
+    margin-top: 5px;
+}
+h2:hover{
+    font-size: 27px;
+    color: var(--primario);
+}
+button{
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primario);
+    color: aliceblue;
+    transition: font-size 0.3s ease;
+}
+button:hover{
+    background-color: var(--secundario);
+    font-size: 20px;
+}
+
+/*---- responsive ----*/
+@media(max-width:650px){
+    body{
+        background-color: aliceblue;
+        margin: auto;
+    }
+    .logo{
+        display: flex;
+        align-items: left;
+    }
+    nav{
+        background-color: rgba(102, 51, 153, 0.8);
+        display: block;
+        box-shadow: 10px 15px rgb(159, 138, 168,0.4);
+        margin-right: 55px;
+    }
+    ul{
+        display: block;
+        text-align: left;
+        border-radius: none;
+    }
+}
